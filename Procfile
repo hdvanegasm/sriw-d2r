@@ -1,1 +1,1 @@
-web: d2r-server mydb.ttl
+web: ./d2r-server mydb.ttl
