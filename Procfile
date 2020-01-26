@@ -1,2 +1,2 @@
-release: chmod a+x d2r-server
-web: ./d2r-server mydb.ttl
+release: chmod +x d2r-server.bat
+web: bash d2r-server.bat mydb.ttl 
