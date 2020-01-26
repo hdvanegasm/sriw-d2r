@@ -1,0 +1,1 @@
+web: ./d2r-server mydb.ttl
