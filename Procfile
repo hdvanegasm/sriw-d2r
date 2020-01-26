@@ -1,1 +1,1 @@
-web: ./d2r-server mydb.ttl
+web: sudo ./d2r-server mydb.ttl
