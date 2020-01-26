@@ -1,8 +1,4 @@
 @echo off
-if NOT EXIST .\d2r-server.bat (
-  echo Please cd into the D2R Server directory to run the server
-  exit /B
-)
 set D2RQ_ROOT=%~p0
 set CP="%D2RQ_ROOT%build"
 call :findjars "%D2RQ_ROOT%lib"
