@@ -1,15 +1,17 @@
-@echo off
-set D2RQ_ROOT=%~p0
-set CP="%D2RQ_ROOT%build"
-call :findjars "%D2RQ_ROOT%lib"
-set LOGCONFIG=file:%D2RQ_ROOT%etc/log4j.properties
-java -cp %CP% -Xmx1G "-Dlog4j.configuration=%LOGCONFIG%" d2rq.server %*
-exit /B
-
-:findjars
-for %%j in (%1\*.jar) do call :addjar "%%j"
-for /D %%d in (%1\*) do call :findjars "%%d"
-exit /B
-
-:addjar
-set CP=%CP%;%1
+#!/bin/bash
+if [ ! -e "./d2r-server" ]
+then
+  echo "Please cd into the D2R Server directory to run the server"
+  exit 1
+fi
+D2RQ_ROOT="$( dirname "${BASH_SOURCE[0]}" )"
+CP="$D2RQ_ROOT/build"
+SEP=':'
+if [ $(uname -s | grep -ic 'cygwin\|mingw') -gt 0 ]; then SEP=';'; fi
+for jar in "$D2RQ_ROOT"/lib/*.jar "$D2RQ_ROOT"/lib/*/*.jar
+do
+  if [ ! -e "$jar" ]; then continue; fi
+  CP="$CP$SEP$jar"
+done
+LOGCONFIG=${LOGCONFIG:-file:$D2RQ_ROOT/etc/log4j.properties}
+exec java -cp "$CP" -Xmx1G "-Dlog4j.configuration=${LOGCONFIG}" d2rq.server "$@"
