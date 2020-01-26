@@ -1,2 +1,2 @@
-release: chmod u+x d2r-server
+release: chmod 777 d2r-server
 web: ./d2r-server mydb.ttl
