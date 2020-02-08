@@ -10,7 +10,7 @@
 
 map:database a d2rq:Database;
 	d2rq:jdbcDriver "com.mysql.jdbc.Driver";
-	d2rq:jdbcDSN "jdbc:mysql://us-cdbr-iron-east-05.cleardb.net/heroku_a9fc61c734ac827";
+	d2rq:jdbcDSN "jdbc:mysql://us-cdbr-iron-east-04.cleardb.net/heroku_a9fc61c734ac827";
 	d2rq:username "b69947f640e7a9";
 	d2rq:password "d06d00a0";
 	jdbc:autoReconnect "true";
