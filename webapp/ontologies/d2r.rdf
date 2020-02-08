@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:db="http://localhost:35702/resource/"
+    xmlns:map="http://localhost:35702/resource/#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:vocab="http://localhost:35702/resource/vocab/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <vocab:moto rdf:about="http://localhost:35702/resource/moto/KAW300">
+    <vocab:moto_placa>
+      <vocab:vehiculo rdf:about="http://localhost:35702/resource/vehiculo/KAW300">
+        <vocab:vehiculo_cedula_vendedor>
+          <vocab:vendedor rdf:about="http://localhost:35702/resource/vendedor/1234">
+            <vocab:vendedor_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >1234</vocab:vendedor_cedula>
+            <vocab:vendedor_nombre>Pedro</vocab:vendedor_nombre>
+            <rdfs:label>vendedor #1234</rdfs:label>
+          </vocab:vendedor>
+        </vocab:vehiculo_cedula_vendedor>
+        <vocab:vehiculo_cedula_comprador>
+          <vocab:comprador rdf:about="http://localhost:35702/resource/comprador/5432">
+            <vocab:comprador_vendedor_cedula rdf:resource="http://localhost:35702/resource/vendedor/1234"/>
+            <rdfs:label>comprador #5432</rdfs:label>
+            <vocab:comprador_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >5432</vocab:comprador_cedula>
+            <vocab:comprador_nombre>Edwin</vocab:comprador_nombre>
+          </vocab:comprador>
+        </vocab:vehiculo_cedula_comprador>
+        <vocab:vehiculo_nit_proveedor>
+          <vocab:proveedor rdf:about="http://localhost:35702/resource/proveedor/56785678">
+            <vocab:proveedor_nit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >56785678</vocab:proveedor_nit>
+            <rdfs:label>proveedor #56785678</rdfs:label>
+            <vocab:proveedor_nombre>Kawasaki</vocab:proveedor_nombre>
+          </vocab:proveedor>
+        </vocab:vehiculo_nit_proveedor>
+        <vocab:vehiculo_placa>KAW300</vocab:vehiculo_placa>
+        <vocab:vehiculo_tipo>M</vocab:vehiculo_tipo>
+        <rdfs:label>vehiculo #KAW300</rdfs:label>
+        <vocab:vehiculo_modelo>Ninja300</vocab:vehiculo_modelo>
+      </vocab:vehiculo>
+    </vocab:moto_placa>
+    <rdfs:label>moto #KAW300</rdfs:label>
+    <vocab:moto_tipo_chasis>Doble viga</vocab:moto_tipo_chasis>
+    <vocab:moto_tipo_refrigeracion>Agua</vocab:moto_tipo_refrigeracion>
+  </vocab:moto>
+  <vocab:carro rdf:about="http://localhost:35702/resource/carro/SUZ124">
+    <vocab:carro_placa>
+      <vocab:vehiculo rdf:about="http://localhost:35702/resource/vehiculo/SUZ124">
+        <vocab:vehiculo_cedula_vendedor>
+          <vocab:vendedor rdf:about="http://localhost:35702/resource/vendedor/2345">
+            <vocab:vendedor_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >2345</vocab:vendedor_cedula>
+            <vocab:vendedor_nombre>Pablo</vocab:vendedor_nombre>
+            <rdfs:label>vendedor #2345</rdfs:label>
+          </vocab:vendedor>
+        </vocab:vehiculo_cedula_vendedor>
+        <vocab:vehiculo_cedula_comprador>
+          <vocab:comprador rdf:about="http://localhost:35702/resource/comprador/9876">
+            <vocab:comprador_vendedor_cedula rdf:resource="http://localhost:35702/resource/vendedor/2345"/>
+            <rdfs:label>comprador #9876</rdfs:label>
+            <vocab:comprador_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >9876</vocab:comprador_cedula>
+            <vocab:comprador_nombre>Hernan</vocab:comprador_nombre>
+          </vocab:comprador>
+        </vocab:vehiculo_cedula_comprador>
+        <vocab:vehiculo_nit_proveedor>
+          <vocab:proveedor rdf:about="http://localhost:35702/resource/proveedor/12341234">
+            <vocab:proveedor_nit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >12341234</vocab:proveedor_nit>
+            <rdfs:label>proveedor #12341234</rdfs:label>
+            <vocab:proveedor_nombre>Suzuki</vocab:proveedor_nombre>
+          </vocab:proveedor>
+        </vocab:vehiculo_nit_proveedor>
+        <vocab:vehiculo_placa>SUZ124</vocab:vehiculo_placa>
+        <vocab:vehiculo_tipo>C</vocab:vehiculo_tipo>
+        <rdfs:label>vehiculo #SUZ124</rdfs:label>
+        <vocab:vehiculo_modelo>Vitara</vocab:vehiculo_modelo>
+      </vocab:vehiculo>
+    </vocab:carro_placa>
+    <rdfs:label>carro #SUZ124</rdfs:label>
+    <vocab:carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >4</vocab:carro_numero_puertas>
+    <vocab:carro_tipo_combustible>Diesel</vocab:carro_tipo_combustible>
+  </vocab:carro>
+  <vocab:carro rdf:about="http://localhost:35702/resource/carro/HON346">
+    <vocab:carro_placa>
+      <vocab:vehiculo rdf:about="http://localhost:35702/resource/vehiculo/HON346">
+        <vocab:vehiculo_cedula_vendedor>
+          <vocab:vendedor rdf:about="http://localhost:35702/resource/vendedor/4567">
+            <vocab:vendedor_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >4567</vocab:vendedor_cedula>
+            <vocab:vendedor_nombre>David</vocab:vendedor_nombre>
+            <rdfs:label>vendedor #4567</rdfs:label>
+          </vocab:vendedor>
+        </vocab:vehiculo_cedula_vendedor>
+        <vocab:vehiculo_cedula_comprador>
+          <vocab:comprador rdf:about="http://localhost:35702/resource/comprador/7654">
+            <vocab:comprador_vendedor_cedula rdf:resource="http://localhost:35702/resource/vendedor/4567"/>
+            <rdfs:label>comprador #7654</rdfs:label>
+            <vocab:comprador_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >7654</vocab:comprador_cedula>
+            <vocab:comprador_nombre>Santiago</vocab:comprador_nombre>
+          </vocab:comprador>
+        </vocab:vehiculo_cedula_comprador>
+        <vocab:vehiculo_nit_proveedor>
+          <vocab:proveedor rdf:about="http://localhost:35702/resource/proveedor/34563465">
+            <vocab:proveedor_nit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >34563465</vocab:proveedor_nit>
+            <rdfs:label>proveedor #34563465</rdfs:label>
+            <vocab:proveedor_nombre>Honda</vocab:proveedor_nombre>
+          </vocab:proveedor>
+        </vocab:vehiculo_nit_proveedor>
+        <vocab:vehiculo_placa>HON346</vocab:vehiculo_placa>
+        <vocab:vehiculo_tipo>C</vocab:vehiculo_tipo>
+        <rdfs:label>vehiculo #HON346</rdfs:label>
+        <vocab:vehiculo_modelo>Accord</vocab:vehiculo_modelo>
+      </vocab:vehiculo>
+    </vocab:carro_placa>
+    <rdfs:label>carro #HON346</rdfs:label>
+    <vocab:carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >4</vocab:carro_numero_puertas>
+    <vocab:carro_tipo_combustible>Diesel</vocab:carro_tipo_combustible>
+  </vocab:carro>
+  <vocab:carro rdf:about="http://localhost:35702/resource/carro/NIS865">
+    <vocab:carro_placa>
+      <vocab:vehiculo rdf:about="http://localhost:35702/resource/vehiculo/NIS865">
+        <vocab:vehiculo_cedula_vendedor>
+          <vocab:vendedor rdf:about="http://localhost:35702/resource/vendedor/5678">
+            <vocab:vendedor_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >5678</vocab:vendedor_cedula>
+            <vocab:vendedor_nombre>Carlos</vocab:vendedor_nombre>
+            <rdfs:label>vendedor #5678</rdfs:label>
+          </vocab:vendedor>
+        </vocab:vehiculo_cedula_vendedor>
+        <vocab:vehiculo_cedula_comprador>
+          <vocab:comprador rdf:about="http://localhost:35702/resource/comprador/6543">
+            <vocab:comprador_vendedor_cedula rdf:resource="http://localhost:35702/resource/vendedor/5678"/>
+            <rdfs:label>comprador #6543</rdfs:label>
+            <vocab:comprador_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >6543</vocab:comprador_cedula>
+            <vocab:comprador_nombre>Mario</vocab:comprador_nombre>
+          </vocab:comprador>
+        </vocab:vehiculo_cedula_comprador>
+        <vocab:vehiculo_nit_proveedor>
+          <vocab:proveedor rdf:about="http://localhost:35702/resource/proveedor/45674567">
+            <vocab:proveedor_nit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >45674567</vocab:proveedor_nit>
+            <rdfs:label>proveedor #45674567</rdfs:label>
+            <vocab:proveedor_nombre>Nissan</vocab:proveedor_nombre>
+          </vocab:proveedor>
+        </vocab:vehiculo_nit_proveedor>
+        <vocab:vehiculo_placa>NIS865</vocab:vehiculo_placa>
+        <vocab:vehiculo_tipo>C</vocab:vehiculo_tipo>
+        <rdfs:label>vehiculo #NIS865</rdfs:label>
+        <vocab:vehiculo_modelo>GTR</vocab:vehiculo_modelo>
+      </vocab:vehiculo>
+    </vocab:carro_placa>
+    <rdfs:label>carro #NIS865</rdfs:label>
+    <vocab:carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >2</vocab:carro_numero_puertas>
+    <vocab:carro_tipo_combustible>Gasolina</vocab:carro_tipo_combustible>
+  </vocab:carro>
+  <vocab:carro rdf:about="http://localhost:35702/resource/carro/NIS370">
+    <vocab:carro_placa>
+      <vocab:vehiculo rdf:about="http://localhost:35702/resource/vehiculo/NIS370">
+        <vocab:vehiculo_cedula_vendedor rdf:resource="http://localhost:35702/resource/vendedor/5678"/>
+        <vocab:vehiculo_cedula_comprador rdf:resource="http://localhost:35702/resource/comprador/6543"/>
+        <vocab:vehiculo_nit_proveedor rdf:resource="http://localhost:35702/resource/proveedor/45674567"/>
+        <vocab:vehiculo_placa>NIS370</vocab:vehiculo_placa>
+        <vocab:vehiculo_tipo>C</vocab:vehiculo_tipo>
+        <rdfs:label>vehiculo #NIS370</rdfs:label>
+        <vocab:vehiculo_modelo>370z</vocab:vehiculo_modelo>
+      </vocab:vehiculo>
+    </vocab:carro_placa>
+    <rdfs:label>carro #NIS370</rdfs:label>
+    <vocab:carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >2</vocab:carro_numero_puertas>
+    <vocab:carro_tipo_combustible>Gasolina</vocab:carro_tipo_combustible>
+  </vocab:carro>
+  <vocab:moto rdf:about="http://localhost:35702/resource/moto/SUZ650">
+    <vocab:moto_placa>
+      <vocab:vehiculo rdf:about="http://localhost:35702/resource/vehiculo/SUZ650">
+        <vocab:vehiculo_cedula_vendedor rdf:resource="http://localhost:35702/resource/vendedor/2345"/>
+        <vocab:vehiculo_cedula_comprador rdf:resource="http://localhost:35702/resource/comprador/9876"/>
+        <vocab:vehiculo_nit_proveedor rdf:resource="http://localhost:35702/resource/proveedor/12341234"/>
+        <vocab:vehiculo_placa>SUZ650</vocab:vehiculo_placa>
+        <vocab:vehiculo_tipo>M</vocab:vehiculo_tipo>
+        <rdfs:label>vehiculo #SUZ650</rdfs:label>
+        <vocab:vehiculo_modelo>SV650</vocab:vehiculo_modelo>
+      </vocab:vehiculo>
+    </vocab:moto_placa>
+    <rdfs:label>moto #SUZ650</rdfs:label>
+    <vocab:moto_tipo_chasis>Multitubular</vocab:moto_tipo_chasis>
+    <vocab:moto_tipo_refrigeracion>Liquido</vocab:moto_tipo_refrigeracion>
+  </vocab:moto>
+  <vocab:moto rdf:about="http://localhost:35702/resource/moto/KAW650">
+    <vocab:moto_placa>
+      <vocab:vehiculo rdf:about="http://localhost:35702/resource/vehiculo/KAW650">
+        <vocab:vehiculo_cedula_vendedor rdf:resource="http://localhost:35702/resource/vendedor/1234"/>
+        <vocab:vehiculo_cedula_comprador rdf:resource="http://localhost:35702/resource/comprador/5432"/>
+        <vocab:vehiculo_nit_proveedor rdf:resource="http://localhost:35702/resource/proveedor/56785678"/>
+        <vocab:vehiculo_placa>KAW650</vocab:vehiculo_placa>
+        <vocab:vehiculo_tipo>M</vocab:vehiculo_tipo>
+        <rdfs:label>vehiculo #KAW650</rdfs:label>
+        <vocab:vehiculo_modelo>Ninja650</vocab:vehiculo_modelo>
+      </vocab:vehiculo>
+    </vocab:moto_placa>
+    <rdfs:label>moto #KAW650</rdfs:label>
+    <vocab:moto_tipo_chasis>Multitubular</vocab:moto_tipo_chasis>
+    <vocab:moto_tipo_refrigeracion>Agua</vocab:moto_tipo_refrigeracion>
+  </vocab:moto>
+  <vocab:carro rdf:about="http://localhost:35702/resource/carro/BMW325">
+    <vocab:carro_placa>
+      <vocab:vehiculo rdf:about="http://localhost:35702/resource/vehiculo/BMW325">
+        <vocab:vehiculo_cedula_vendedor>
+          <vocab:vendedor rdf:about="http://localhost:35702/resource/vendedor/3456">
+            <vocab:vendedor_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >3456</vocab:vendedor_cedula>
+            <vocab:vendedor_nombre>Juan</vocab:vendedor_nombre>
+            <rdfs:label>vendedor #3456</rdfs:label>
+          </vocab:vendedor>
+        </vocab:vehiculo_cedula_vendedor>
+        <vocab:vehiculo_cedula_comprador>
+          <vocab:comprador rdf:about="http://localhost:35702/resource/comprador/8765">
+            <vocab:comprador_vendedor_cedula rdf:resource="http://localhost:35702/resource/vendedor/3456"/>
+            <rdfs:label>comprador #8765</rdfs:label>
+            <vocab:comprador_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >8765</vocab:comprador_cedula>
+            <vocab:comprador_nombre>Daniel</vocab:comprador_nombre>
+          </vocab:comprador>
+        </vocab:vehiculo_cedula_comprador>
+        <vocab:vehiculo_nit_proveedor>
+          <vocab:proveedor rdf:about="http://localhost:35702/resource/proveedor/23452345">
+            <vocab:proveedor_nit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >23452345</vocab:proveedor_nit>
+            <rdfs:label>proveedor #23452345</rdfs:label>
+            <vocab:proveedor_nombre>BMW</vocab:proveedor_nombre>
+          </vocab:proveedor>
+        </vocab:vehiculo_nit_proveedor>
+        <vocab:vehiculo_placa>BMW325</vocab:vehiculo_placa>
+        <vocab:vehiculo_tipo>C</vocab:vehiculo_tipo>
+        <rdfs:label>vehiculo #BMW325</rdfs:label>
+        <vocab:vehiculo_modelo>M3</vocab:vehiculo_modelo>
+      </vocab:vehiculo>
+    </vocab:carro_placa>
+    <rdfs:label>carro #BMW325</rdfs:label>
+    <vocab:carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+    >4</vocab:carro_numero_puertas>
+    <vocab:carro_tipo_combustible>Gasolina</vocab:carro_tipo_combustible>
+  </vocab:carro>
+  <vocab:moto rdf:about="http://localhost:35702/resource/moto/HON600">
+    <vocab:moto_placa>
+      <vocab:vehiculo rdf:about="http://localhost:35702/resource/vehiculo/HON600">
+        <vocab:vehiculo_cedula_vendedor rdf:resource="http://localhost:35702/resource/vendedor/4567"/>
+        <vocab:vehiculo_cedula_comprador rdf:resource="http://localhost:35702/resource/comprador/7654"/>
+        <vocab:vehiculo_nit_proveedor rdf:resource="http://localhost:35702/resource/proveedor/34563465"/>
+        <vocab:vehiculo_placa>HON600</vocab:vehiculo_placa>
+        <vocab:vehiculo_tipo>M</vocab:vehiculo_tipo>
+        <rdfs:label>vehiculo #HON600</rdfs:label>
+        <vocab:vehiculo_modelo>CBR600</vocab:vehiculo_modelo>
+      </vocab:vehiculo>
+    </vocab:moto_placa>
+    <rdfs:label>moto #HON600</rdfs:label>
+    <vocab:moto_tipo_chasis>Doble viga</vocab:moto_tipo_chasis>
+    <vocab:moto_tipo_refrigeracion>Agua</vocab:moto_tipo_refrigeracion>
+  </vocab:moto>
+  <vocab:moto rdf:about="http://localhost:35702/resource/moto/BMW850">
+    <vocab:moto_placa>
+      <vocab:vehiculo rdf:about="http://localhost:35702/resource/vehiculo/BMW850">
+        <vocab:vehiculo_cedula_vendedor rdf:resource="http://localhost:35702/resource/vendedor/3456"/>
+        <vocab:vehiculo_cedula_comprador rdf:resource="http://localhost:35702/resource/comprador/8765"/>
+        <vocab:vehiculo_nit_proveedor rdf:resource="http://localhost:35702/resource/proveedor/23452345"/>
+        <vocab:vehiculo_placa>BMW850</vocab:vehiculo_placa>
+        <vocab:vehiculo_tipo>M</vocab:vehiculo_tipo>
+        <rdfs:label>vehiculo #BMW850</rdfs:label>
+        <vocab:vehiculo_modelo>F850GS</vocab:vehiculo_modelo>
+      </vocab:vehiculo>
+    </vocab:moto_placa>
+    <rdfs:label>moto #BMW850</rdfs:label>
+    <vocab:moto_tipo_chasis>Bastidor en arco</vocab:moto_tipo_chasis>
+    <vocab:moto_tipo_refrigeracion>Liquido</vocab:moto_tipo_refrigeracion>
+  </vocab:moto>
+</rdf:RDF>
