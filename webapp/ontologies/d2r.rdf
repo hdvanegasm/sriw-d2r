@@ -1,15 +1,16 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/d2r#"
-     xml:base="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/d2r"
+<rdf:RDF xmlns="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/d2r.rdf/"
+     xml:base="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/d2r.rdf/"
      xmlns:db="http://localhost:35702/resource/"
      xmlns:map="http://localhost:35702/resource/#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vocab="http://localhost:35702/resource/vocab/">
-    <owl:Ontology rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/d2r#"/>
+    <owl:Ontology rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/d2r.rdf"/>
     
 
 
