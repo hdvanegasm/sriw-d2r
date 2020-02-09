@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario_rdf.rdf/"
-     xml:base="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario_rdf.rdf/"
+<rdf:RDF xmlns="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/consesionario_rdf.rdf/"
+     xml:base="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/consesionario_rdf.rdf/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -8,7 +8,7 @@
      xmlns:cons="http://www.consesionario_rdf.org#"
      xmlns:obda="https://w3id.org/obda/vocabulary#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario_rdf.rdf"/>
+    <owl:Ontology rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/consesionario_rdf.rdf"/>
     
 
 
