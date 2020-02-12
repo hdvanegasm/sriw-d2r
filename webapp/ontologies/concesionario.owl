@@ -170,13 +170,19 @@
 
     <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#comprador_direccion -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#comprador_direccion"/>
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#comprador_direccion">
+        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#comprador_salario -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#comprador_salario"/>
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#comprador_salario">
+        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -194,31 +200,45 @@
 
     <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#persona_cedula -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#persona_cedula"/>
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#persona_cedula">
+        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#persona_nombre -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#persona_nombre"/>
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#persona_nombre">
+        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Persona"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#vendedor_horas_trabajo -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#vendedor_horas_trabajo"/>
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#vendedor_horas_trabajo">
+        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#vendedor_meses_vinculacion -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#vendedor_meses_vinculacion"/>
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#vendedor_meses_vinculacion">
+        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/carro_modelo -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/carro_modelo"/>
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/carro_modelo">
+        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -233,7 +253,10 @@
 
     <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/carro_placa -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/carro_placa"/>
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/carro_placa">
+        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
