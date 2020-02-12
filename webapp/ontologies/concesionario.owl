@@ -213,11 +213,23 @@
     
 
 
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Ciudad -->
+
+    <owl:Class rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Ciudad"/>
+    
+
+
     <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador -->
 
     <owl:Class rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador">
         <rdfs:subClassOf rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Persona"/>
     </owl:Class>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor -->
+
+    <owl:Class rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
     
 
 
