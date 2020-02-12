@@ -7,6 +7,7 @@ xsd:		http://www.w3.org/2001/XMLSchema#
 obda:		https://w3id.org/obda/vocabulary#
 rdfs:		http://www.w3.org/2000/01/rdf-schema#
 concesionario:	http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario#/
+concesionario1:	http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#
 
 [MappingDeclaration] @collection [[
 ]]

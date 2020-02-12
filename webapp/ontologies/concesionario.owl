@@ -413,8 +413,23 @@
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Camaro1">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
         <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Chevrolet"/>
+        <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</carro_modelo>
         <carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</carro_numero_puertas>
-        <carro_tipo_combustible>Gasolina</carro_tipo_combustible>
+        <carro_placa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SAJ213</carro_placa>
+        <carro_tipo_combustible rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gasolina</carro_tipo_combustible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Camilo -->
+
+    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Camilo">
+        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
+        <compra rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Mustang"/>
+        <concesionario1:comprador_direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calle 54</concesionario1:comprador_direccion>
+        <concesionario1:comprador_salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34200000</concesionario1:comprador_salario>
+        <concesionario1:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3412314</concesionario1:persona_cedula>
+        <concesionario1:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Camilo</concesionario1:persona_nombre>
     </owl:NamedIndividual>
     
 
@@ -488,6 +503,10 @@
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Edwin">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
         <compra rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Lamborgini"/>
+        <concesionario1:comprador_direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calle 13</concesionario1:comprador_direccion>
+        <concesionario1:comprador_salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12388800</concesionario1:comprador_salario>
+        <concesionario1:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">121442</concesionario1:persona_cedula>
+        <concesionario1:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edwin</concesionario1:persona_nombre>
     </owl:NamedIndividual>
     
 
@@ -496,6 +515,11 @@
 
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Felipe">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
+        <compra rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Renault9"/>
+        <concesionario1:comprador_direccion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calle 32</concesionario1:comprador_direccion>
+        <concesionario1:comprador_salario rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000000</concesionario1:comprador_salario>
+        <concesionario1:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">34123411</concesionario1:persona_cedula>
+        <concesionario1:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Felipe</concesionario1:persona_nombre>
     </owl:NamedIndividual>
     
 
@@ -515,6 +539,11 @@
 
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Hernan">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
+        <vende rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Civic"/>
+        <concesionario1:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">114134</concesionario1:persona_cedula>
+        <concesionario1:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hernan</concesionario1:persona_nombre>
+        <concesionario1:vendedor_horas_trabajo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</concesionario1:vendedor_horas_trabajo>
+        <concesionario1:vendedor_meses_vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</concesionario1:vendedor_meses_vinculacion>
     </owl:NamedIndividual>
     
 
