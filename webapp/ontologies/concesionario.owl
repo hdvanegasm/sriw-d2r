@@ -158,13 +158,19 @@
 
     <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#ciudad_codigo_postal -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#ciudad_codigo_postal"/>
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#ciudad_codigo_postal">
+        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Ciudad"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#ciudad_poblacion_total -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#ciudad_poblacion_total"/>
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#ciudad_poblacion_total">
+        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Ciudad"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -188,13 +194,19 @@
 
     <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#motor_desplazamiento -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#motor_desplazamiento"/>
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#motor_desplazamiento">
+        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#motor_id -->
 
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#motor_id"/>
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#motor_id">
+        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
