@@ -156,6 +156,66 @@
     
 
 
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#ciudad_codigo_postal -->
+
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#ciudad_codigo_postal"/>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#ciudad_poblacion_total -->
+
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#ciudad_poblacion_total"/>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#comprador_direccion -->
+
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#comprador_direccion"/>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#comprador_salario -->
+
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#comprador_salario"/>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#motor_desplazamiento -->
+
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#motor_desplazamiento"/>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#motor_id -->
+
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#motor_id"/>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#persona_cedula -->
+
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#persona_cedula"/>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#persona_nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#persona_nombre"/>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#vendedor_horas_trabajo -->
+
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#vendedor_horas_trabajo"/>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#vendedor_meses_vinculacion -->
+
+    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#vendedor_meses_vinculacion"/>
+    
+
+
     <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/carro_modelo -->
 
     <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/carro_modelo"/>
@@ -186,24 +246,6 @@
     
 
 
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/comprador_cedula -->
-
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/comprador_cedula">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/comprador_nombre -->
-
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/comprador_nombre">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/proveedor_nit -->
 
     <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/proveedor_nit">
@@ -217,24 +259,6 @@
 
     <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/proveedor_nombre">
         <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Proveedor"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/vendedor_cedula -->
-
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/vendedor_cedula">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/vendedor_nombre -->
-
-    <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/vendedor_nombre">
-        <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -313,8 +337,6 @@
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Alberto">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
         <compra rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Chevette"/>
-        <comprador_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8797654</comprador_cedula>
-        <comprador_nombre>Alberto</comprador_nombre>
     </owl:NamedIndividual>
     
 
@@ -324,8 +346,6 @@
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Andres">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
         <compra rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Camaro"/>
-        <comprador_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4365431</comprador_cedula>
-        <comprador_nombre>Andres</comprador_nombre>
     </owl:NamedIndividual>
     
 
@@ -422,8 +442,6 @@
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Cristina">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
         <compra rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Boxer"/>
-        <comprador_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">545641</comprador_cedula>
-        <comprador_nombre>Cristina</comprador_nombre>
     </owl:NamedIndividual>
     
 
@@ -433,8 +451,6 @@
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Daniel">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
         <compra rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Murcielago"/>
-        <comprador_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">741087</comprador_cedula>
-        <comprador_nombre>Daniel</comprador_nombre>
     </owl:NamedIndividual>
     
 
@@ -463,8 +479,6 @@
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Edwin">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
         <compra rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/ScramblerIconDark"/>
-        <comprador_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45431</comprador_cedula>
-        <comprador_nombre>Edwin</comprador_nombre>
     </owl:NamedIndividual>
     
 
@@ -474,8 +488,6 @@
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Felipe">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Comprador"/>
         <compra rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Duke250"/>
-        <comprador_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">954125</comprador_cedula>
-        <comprador_nombre>Felipe</comprador_nombre>
     </owl:NamedIndividual>
     
 
@@ -528,8 +540,6 @@
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
         <vende rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Boxer"/>
         <vende rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/ScramblerIconDark"/>
-        <vendedor_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82439</vendedor_cedula>
-        <vendedor_nombre>Hernan</vendedor_nombre>
     </owl:NamedIndividual>
     
 
@@ -551,8 +561,6 @@
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
         <vende rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Chevette"/>
         <vende rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Murcielago"/>
-        <vendedor_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3984</vendedor_cedula>
-        <vendedor_nombre>Jacinto</vendedor_nombre>
     </owl:NamedIndividual>
     
 
@@ -562,8 +570,6 @@
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Jose">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
         <vende rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Camaro"/>
-        <vendedor_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">341723</vendedor_cedula>
-        <vendedor_nombre>Jose</vendedor_nombre>
     </owl:NamedIndividual>
     
 
@@ -606,8 +612,6 @@
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Miguel">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
         <vende rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/GN125"/>
-        <vendedor_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48217</vendedor_cedula>
-        <vendedor_nombre>Miguel</vendedor_nombre>
     </owl:NamedIndividual>
     
 
@@ -670,8 +674,6 @@
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Pablo">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
         <vende rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Duke250"/>
-        <vendedor_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3241</vendedor_cedula>
-        <vendedor_nombre>Pablo</vendedor_nombre>
     </owl:NamedIndividual>
     
 
@@ -681,8 +683,6 @@
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Pedro">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
         <vende rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Renault9"/>
-        <vendedor_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23134</vendedor_cedula>
-        <vendedor_nombre>Pedro</vendedor_nombre>
     </owl:NamedIndividual>
     
 
@@ -722,8 +722,6 @@
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Santiago">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
         <vende rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/S1000RR"/>
-        <vendedor_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37492</vendedor_cedula>
-        <vendedor_nombre>Santiago</vendedor_nombre>
     </owl:NamedIndividual>
     
 
