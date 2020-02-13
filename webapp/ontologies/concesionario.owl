@@ -161,7 +161,7 @@
 
     <owl:DatatypeProperty rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#ciudad_codigo_postal">
         <rdfs:domain rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Ciudad"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -368,6 +368,69 @@
     
 
 
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Francfort -->
+
+    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Francfort">
+        <concesionario1:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000001</concesionario1:ciudad_codigo_postal>
+        <concesionario1:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000000</concesionario1:ciudad_poblacion_total>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Hamburgo -->
+
+    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Hamburgo">
+        <concesionario1:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000002</concesionario1:ciudad_codigo_postal>
+        <concesionario1:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3400000</concesionario1:ciudad_poblacion_total>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Medellin -->
+
+    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Medellin">
+        <concesionario1:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000003</concesionario1:ciudad_codigo_postal>
+        <concesionario1:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000000</concesionario1:ciudad_poblacion_total>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Milan -->
+
+    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Milan">
+        <concesionario1:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000004</concesionario1:ciudad_codigo_postal>
+        <concesionario1:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">450000</concesionario1:ciudad_poblacion_total>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Munich -->
+
+    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Munich">
+        <concesionario1:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000005</concesionario1:ciudad_codigo_postal>
+        <concesionario1:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40000</concesionario1:ciudad_poblacion_total>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#NuevaYork -->
+
+    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#NuevaYork">
+        <concesionario1:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000006</concesionario1:ciudad_codigo_postal>
+        <concesionario1:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600000</concesionario1:ciudad_poblacion_total>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#SanFrancisco -->
+
+    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#SanFrancisco">
+        <concesionario1:ciudad_codigo_postal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50000007</concesionario1:ciudad_codigo_postal>
+        <concesionario1:ciudad_poblacion_total rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130000</concesionario1:ciudad_poblacion_total>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Skyline1 -->
 
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Skyline1">
@@ -482,6 +545,7 @@
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Camaro">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
         <owl:sameAs rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Camaro1"/>
+        <concesionario1:ensamblado_en rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Francfort"/>
         <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V8"/>
         <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Chevrolet"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</carro_modelo>
@@ -522,6 +586,7 @@
 
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Chevette">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <concesionario1:ensamblado_en rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Hamburgo"/>
         <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#TaunusV4"/>
         <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Chevrolet"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</carro_modelo>
@@ -548,6 +613,7 @@
 
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Civic">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <concesionario1:ensamblado_en rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Medellin"/>
         <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V10"/>
         <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Honda"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</carro_modelo>
@@ -699,6 +765,7 @@
 
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Murcielago">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <concesionario1:ensamblado_en rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Milan"/>
         <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V12"/>
         <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Lamborgini"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</carro_modelo>
@@ -714,6 +781,7 @@
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Mustang">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
         <owl:sameAs rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Mustang1"/>
+        <concesionario1:ensamblado_en rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Munich"/>
         <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V8SuperCargado"/>
         <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Ford"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</carro_modelo>
@@ -789,6 +857,7 @@
 
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Renault9">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <concesionario1:ensamblado_en rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#NuevaYork"/>
         <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V4"/>
         <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Renault"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</carro_modelo>
@@ -816,6 +885,7 @@
 
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Skyline">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <concesionario1:ensamblado_en rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#SanFrancisco"/>
         <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#W16"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</carro_modelo>
         <carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</carro_numero_puertas>
