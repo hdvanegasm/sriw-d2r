@@ -368,6 +368,89 @@
     
 
 
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Skyline1 -->
+
+    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#Skyline1">
+        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <owl:sameAs rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Skyline"/>
+        <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</carro_modelo>
+        <carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</carro_numero_puertas>
+        <carro_placa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UAS131</carro_placa>
+        <carro_tipo_combustible rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gasolina</carro_tipo_combustible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#TaunusV4 -->
+
+    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#TaunusV4">
+        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+        <concesionario1:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12.0</concesionario1:motor_desplazamiento>
+        <concesionario1:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">13241213</concesionario1:motor_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V10 -->
+
+    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V10">
+        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+        <concesionario1:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">23.0</concesionario1:motor_desplazamiento>
+        <concesionario1:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12351235</concesionario1:motor_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V12 -->
+
+    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V12">
+        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+        <concesionario1:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">14.0</concesionario1:motor_desplazamiento>
+        <concesionario1:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4352214</concesionario1:motor_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V4 -->
+
+    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V4">
+        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+        <concesionario1:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">23.0</concesionario1:motor_desplazamiento>
+        <concesionario1:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">523514</concesionario1:motor_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V8 -->
+
+    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V8">
+        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+        <concesionario1:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">33.0</concesionario1:motor_desplazamiento>
+        <concesionario1:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">523451234</concesionario1:motor_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V8SuperCargado -->
+
+    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V8SuperCargado">
+        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+        <concesionario1:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">34.0</concesionario1:motor_desplazamiento>
+        <concesionario1:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5234134</concesionario1:motor_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#W16 -->
+
+    <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#W16">
+        <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Motor"/>
+        <concesionario1:motor_desplazamiento rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12.0</concesionario1:motor_desplazamiento>
+        <concesionario1:motor_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4251324</concesionario1:motor_id>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Alberto -->
 
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Alberto">
@@ -399,6 +482,7 @@
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Camaro">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
         <owl:sameAs rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Camaro1"/>
+        <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V8"/>
         <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Chevrolet"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</carro_modelo>
         <carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</carro_numero_puertas>
@@ -438,6 +522,7 @@
 
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Chevette">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#TaunusV4"/>
         <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Chevrolet"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</carro_modelo>
         <carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</carro_numero_puertas>
@@ -463,6 +548,7 @@
 
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Civic">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V10"/>
         <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Honda"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</carro_modelo>
         <carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</carro_numero_puertas>
@@ -613,6 +699,7 @@
 
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Murcielago">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V12"/>
         <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Lamborgini"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</carro_modelo>
         <carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</carro_numero_puertas>
@@ -627,6 +714,7 @@
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Mustang">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
         <owl:sameAs rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Mustang1"/>
+        <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V8SuperCargado"/>
         <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Ford"/>
         <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</carro_modelo>
         <carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</carro_numero_puertas>
@@ -678,6 +766,8 @@
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Pedro">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
         <vende rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Renault9"/>
+        <concesionario1:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3491827</concesionario1:persona_cedula>
+        <concesionario1:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pedro</concesionario1:persona_nombre>
         <concesionario1:vendedor_meses_vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</concesionario1:vendedor_meses_vinculacion>
         <concesionario1:vendedor_meses_vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</concesionario1:vendedor_meses_vinculacion>
     </owl:NamedIndividual>
@@ -699,8 +789,11 @@
 
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Renault9">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#V4"/>
         <proveido_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Renault"/>
+        <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</carro_modelo>
         <carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</carro_numero_puertas>
+        <carro_placa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HAS823</carro_placa>
         <carro_tipo_combustible>Gasolina</carro_tipo_combustible>
     </owl:NamedIndividual>
     
@@ -711,6 +804,10 @@
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Santiago">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Vendedor"/>
         <vende rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Skyline"/>
+        <concesionario1:persona_cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">134214412</concesionario1:persona_cedula>
+        <concesionario1:persona_nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Santiago</concesionario1:persona_nombre>
+        <concesionario1:vendedor_horas_trabajo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</concesionario1:vendedor_horas_trabajo>
+        <concesionario1:vendedor_meses_vinculacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</concesionario1:vendedor_meses_vinculacion>
     </owl:NamedIndividual>
     
 
@@ -719,6 +816,11 @@
 
     <owl:NamedIndividual rdf:about="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Skyline">
         <rdf:type rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl/Carro"/>
+        <concesionario1:motorizado_por rdf:resource="http://sriw-trabajo1-d2r.herokuapp.com/ontologies/concesionario.owl#W16"/>
+        <carro_modelo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2016</carro_modelo>
+        <carro_numero_puertas rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</carro_numero_puertas>
+        <carro_placa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UAS131</carro_placa>
+        <carro_tipo_combustible rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gasolina</carro_tipo_combustible>
     </owl:NamedIndividual>
 </rdf:RDF>
 
