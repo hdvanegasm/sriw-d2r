@@ -7,7 +7,6 @@
 @prefix d2rq: <http://www.wiwiss.fu-berlin.de/suhl/bizer/D2RQ/0.1#> .
 @prefix jdbc: <http://d2rq.org/terms/jdbc/> .
 
-
 map:database a d2rq:Database;
 	d2rq:jdbcDriver "com.mysql.jdbc.Driver";
 	d2rq:jdbcDSN "jdbc:mysql://us-cdbr-iron-east-04.cleardb.net/heroku_a9fc61c734ac827";
@@ -20,196 +19,250 @@ map:database a d2rq:Database;
 # Table carro
 map:carro a d2rq:ClassMap;
 	d2rq:dataStorage map:database;
-	d2rq:uriPattern "carro/@@carro.placa|urlify@@";
+	d2rq:uriPattern "carro/@@carro.Placa|urlify@@";
 	d2rq:class vocab:carro;
 	d2rq:classDefinitionLabel "carro";
 	.
 map:carro__label a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:carro;
 	d2rq:property rdfs:label;
-	d2rq:pattern "carro #@@carro.placa@@";
+	d2rq:pattern "carro #@@carro.Placa@@";
 	.
-map:carro_numero_puertas a d2rq:PropertyBridge;
+map:carro_Placa a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:carro;
-	d2rq:property vocab:carro_numero_puertas;
-	d2rq:propertyDefinitionLabel "carro numero_puertas";
-	d2rq:column "carro.numero_puertas";
+	d2rq:property vocab:carro_Placa;
+	d2rq:propertyDefinitionLabel "carro Placa";
+	d2rq:column "carro.Placa";
+	.
+map:carro_Modelo a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:carro;
+	d2rq:property vocab:carro_Modelo;
+	d2rq:propertyDefinitionLabel "carro Modelo";
+	d2rq:column "carro.Modelo";
+	.
+map:carro_Numero_Puertas a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:carro;
+	d2rq:property vocab:carro_Numero_Puertas;
+	d2rq:propertyDefinitionLabel "carro Numero_Puertas";
+	d2rq:column "carro.Numero_Puertas";
 	d2rq:datatype xsd:integer;
 	.
-map:carro_tipo_combustible a d2rq:PropertyBridge;
+map:carro_Tipo_Combustible a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:carro;
-	d2rq:property vocab:carro_tipo_combustible;
-	d2rq:propertyDefinitionLabel "carro tipo_combustible";
-	d2rq:column "carro.tipo_combustible";
+	d2rq:property vocab:carro_Tipo_Combustible;
+	d2rq:propertyDefinitionLabel "carro Tipo_Combustible";
+	d2rq:column "carro.Tipo_Combustible";
 	.
-map:carro_placa__ref a d2rq:PropertyBridge;
+map:carro_NIT_Proveedor__ref a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:carro;
-	d2rq:property vocab:carro_placa;
-	d2rq:refersToClassMap map:vehiculo;
-	d2rq:join "carro.placa => vehiculo.placa";
+	d2rq:property vocab:carro_NIT_Proveedor;
+	d2rq:refersToClassMap map:proveedor;
+	d2rq:join "carro.NIT_Proveedor => proveedor.Nit";
+	.
+map:carro_ID_Motor__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:carro;
+	d2rq:property vocab:carro_ID_Motor;
+	d2rq:refersToClassMap map:motor;
+	d2rq:join "carro.ID_Motor => motor.ID";
+	.
+map:carro_Codigo_Postal_Ciudad__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:carro;
+	d2rq:property vocab:carro_Codigo_Postal_Ciudad;
+	d2rq:refersToClassMap map:ciudad;
+	d2rq:join "carro.Codigo_Postal_Ciudad => ciudad.Codigo_postal";
+	.
+map:carro_Cedula_Comprador__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:carro;
+	d2rq:property vocab:carro_Cedula_Comprador;
+	d2rq:refersToClassMap map:comprador;
+	d2rq:join "carro.Cedula_Comprador => comprador.Cedula";
+	.
+map:carro_Cedula_Vendedor__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:carro;
+	d2rq:property vocab:carro_Cedula_Vendedor;
+	d2rq:refersToClassMap map:vendedor;
+	d2rq:join "carro.Cedula_Vendedor => vendedor.Cedula";
+	.
+
+# Table ciudad
+map:ciudad a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "ciudad/@@ciudad.Codigo_postal@@";
+	d2rq:class vocab:ciudad;
+	d2rq:classDefinitionLabel "ciudad";
+	.
+map:ciudad__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:ciudad;
+	d2rq:property rdfs:label;
+	d2rq:pattern "ciudad #@@ciudad.Codigo_postal@@";
+	.
+map:ciudad_Codigo_postal a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:ciudad;
+	d2rq:property vocab:ciudad_Codigo_postal;
+	d2rq:propertyDefinitionLabel "ciudad Codigo_postal";
+	d2rq:column "ciudad.Codigo_postal";
+	d2rq:datatype xsd:integer;
+	.
+map:ciudad_Poblacion a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:ciudad;
+	d2rq:property vocab:ciudad_Poblacion;
+	d2rq:propertyDefinitionLabel "ciudad Poblacion";
+	d2rq:column "ciudad.Poblacion";
+	d2rq:datatype xsd:integer;
 	.
 
 # Table comprador
 map:comprador a d2rq:ClassMap;
 	d2rq:dataStorage map:database;
-	d2rq:uriPattern "comprador/@@comprador.cedula@@";
+	d2rq:uriPattern "comprador/@@comprador.Cedula@@";
 	d2rq:class vocab:comprador;
 	d2rq:classDefinitionLabel "comprador";
 	.
 map:comprador__label a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:comprador;
 	d2rq:property rdfs:label;
-	d2rq:pattern "comprador #@@comprador.cedula@@";
+	d2rq:pattern "comprador #@@comprador.Cedula@@";
 	.
-map:comprador_cedula a d2rq:PropertyBridge;
+map:comprador_Direccion a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:comprador;
-	d2rq:property vocab:comprador_cedula;
-	d2rq:propertyDefinitionLabel "comprador cedula";
-	d2rq:column "comprador.cedula";
+	d2rq:property vocab:comprador_Direccion;
+	d2rq:propertyDefinitionLabel "comprador Direccion";
+	d2rq:column "comprador.Direccion";
+	.
+map:comprador_Salario a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:comprador;
+	d2rq:property vocab:comprador_Salario;
+	d2rq:propertyDefinitionLabel "comprador Salario";
+	d2rq:column "comprador.Salario";
 	d2rq:datatype xsd:integer;
 	.
-map:comprador_nombre a d2rq:PropertyBridge;
+map:comprador_Cedula__ref a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:comprador;
-	d2rq:property vocab:comprador_nombre;
-	d2rq:propertyDefinitionLabel "comprador nombre";
-	d2rq:column "comprador.nombre";
+	d2rq:property vocab:comprador_Cedula;
+	d2rq:refersToClassMap map:persona;
+	d2rq:join "comprador.Cedula => persona.Cedula";
 	.
-map:comprador_vendedor_cedula__ref a d2rq:PropertyBridge;
+map:comprador_Vendedor_Cedula__ref a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:comprador;
-	d2rq:property vocab:comprador_vendedor_cedula;
+	d2rq:property vocab:comprador_Vendedor_Cedula;
 	d2rq:refersToClassMap map:vendedor;
-	d2rq:join "comprador.vendedor_cedula => vendedor.cedula";
+	d2rq:join "comprador.Vendedor_Cedula => vendedor.Cedula";
 	.
 
-# Table moto
-map:moto a d2rq:ClassMap;
+# Table motor
+map:motor a d2rq:ClassMap;
 	d2rq:dataStorage map:database;
-	d2rq:uriPattern "moto/@@moto.placa|urlify@@";
-	d2rq:class vocab:moto;
-	d2rq:classDefinitionLabel "moto";
+	d2rq:uriPattern "motor/@@motor.ID|urlify@@";
+	d2rq:class vocab:motor;
+	d2rq:classDefinitionLabel "motor";
 	.
-map:moto__label a d2rq:PropertyBridge;
-	d2rq:belongsToClassMap map:moto;
+map:motor__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:motor;
 	d2rq:property rdfs:label;
-	d2rq:pattern "moto #@@moto.placa@@";
+	d2rq:pattern "motor #@@motor.ID@@";
 	.
-map:moto_tipo_chasis a d2rq:PropertyBridge;
-	d2rq:belongsToClassMap map:moto;
-	d2rq:property vocab:moto_tipo_chasis;
-	d2rq:propertyDefinitionLabel "moto tipo_chasis";
-	d2rq:column "moto.tipo_chasis";
+map:motor_ID a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:motor;
+	d2rq:property vocab:motor_ID;
+	d2rq:propertyDefinitionLabel "motor ID";
+	d2rq:column "motor.ID";
 	.
-map:moto_tipo_refrigeracion a d2rq:PropertyBridge;
-	d2rq:belongsToClassMap map:moto;
-	d2rq:property vocab:moto_tipo_refrigeracion;
-	d2rq:propertyDefinitionLabel "moto tipo_refrigeracion";
-	d2rq:column "moto.tipo_refrigeracion";
+map:motor_Desplazamiento a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:motor;
+	d2rq:property vocab:motor_Desplazamiento;
+	d2rq:propertyDefinitionLabel "motor Desplazamiento";
+	d2rq:column "motor.Desplazamiento";
+	d2rq:datatype xsd:double;
 	.
-map:moto_placa__ref a d2rq:PropertyBridge;
-	d2rq:belongsToClassMap map:moto;
-	d2rq:property vocab:moto_placa;
-	d2rq:refersToClassMap map:vehiculo;
-	d2rq:join "moto.placa => vehiculo.placa";
+
+# Table persona
+map:persona a d2rq:ClassMap;
+	d2rq:dataStorage map:database;
+	d2rq:uriPattern "persona/@@persona.Cedula@@";
+	d2rq:class vocab:persona;
+	d2rq:classDefinitionLabel "persona";
+	.
+map:persona__label a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:persona;
+	d2rq:property rdfs:label;
+	d2rq:pattern "persona #@@persona.Cedula@@";
+	.
+map:persona_Cedula a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:persona;
+	d2rq:property vocab:persona_Cedula;
+	d2rq:propertyDefinitionLabel "persona Cedula";
+	d2rq:column "persona.Cedula";
+	d2rq:datatype xsd:integer;
+	.
+map:persona_Nombre a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:persona;
+	d2rq:property vocab:persona_Nombre;
+	d2rq:propertyDefinitionLabel "persona Nombre";
+	d2rq:column "persona.Nombre";
+	.
+map:persona_Tipo a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:persona;
+	d2rq:property vocab:persona_Tipo;
+	d2rq:propertyDefinitionLabel "persona Tipo";
+	d2rq:column "persona.Tipo";
 	.
 
 # Table proveedor
 map:proveedor a d2rq:ClassMap;
 	d2rq:dataStorage map:database;
-	d2rq:uriPattern "proveedor/@@proveedor.nit@@";
+	d2rq:uriPattern "proveedor/@@proveedor.Nit@@";
 	d2rq:class vocab:proveedor;
 	d2rq:classDefinitionLabel "proveedor";
 	.
 map:proveedor__label a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:proveedor;
 	d2rq:property rdfs:label;
-	d2rq:pattern "proveedor #@@proveedor.nit@@";
+	d2rq:pattern "proveedor #@@proveedor.Nit@@";
 	.
-map:proveedor_nit a d2rq:PropertyBridge;
+map:proveedor_Nit a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:proveedor;
-	d2rq:property vocab:proveedor_nit;
-	d2rq:propertyDefinitionLabel "proveedor nit";
-	d2rq:column "proveedor.nit";
+	d2rq:property vocab:proveedor_Nit;
+	d2rq:propertyDefinitionLabel "proveedor Nit";
+	d2rq:column "proveedor.Nit";
 	d2rq:datatype xsd:integer;
 	.
-map:proveedor_nombre a d2rq:PropertyBridge;
+map:proveedor_Nombre a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:proveedor;
-	d2rq:property vocab:proveedor_nombre;
-	d2rq:propertyDefinitionLabel "proveedor nombre";
-	d2rq:column "proveedor.nombre";
-	.
-
-# Table vehiculo
-map:vehiculo a d2rq:ClassMap;
-	d2rq:dataStorage map:database;
-	d2rq:uriPattern "vehiculo/@@vehiculo.placa|urlify@@";
-	d2rq:class vocab:vehiculo;
-	d2rq:classDefinitionLabel "vehiculo";
-	.
-map:vehiculo__label a d2rq:PropertyBridge;
-	d2rq:belongsToClassMap map:vehiculo;
-	d2rq:property rdfs:label;
-	d2rq:pattern "vehiculo #@@vehiculo.placa@@";
-	.
-map:vehiculo_placa a d2rq:PropertyBridge;
-	d2rq:belongsToClassMap map:vehiculo;
-	d2rq:property vocab:vehiculo_placa;
-	d2rq:propertyDefinitionLabel "vehiculo placa";
-	d2rq:column "vehiculo.placa";
-	.
-map:vehiculo_modelo a d2rq:PropertyBridge;
-	d2rq:belongsToClassMap map:vehiculo;
-	d2rq:property vocab:vehiculo_modelo;
-	d2rq:propertyDefinitionLabel "vehiculo modelo";
-	d2rq:column "vehiculo.modelo";
-	.
-map:vehiculo_tipo a d2rq:PropertyBridge;
-	d2rq:belongsToClassMap map:vehiculo;
-	d2rq:property vocab:vehiculo_tipo;
-	d2rq:propertyDefinitionLabel "vehiculo tipo";
-	d2rq:column "vehiculo.tipo";
-	.
-map:vehiculo_nit_proveedor__ref a d2rq:PropertyBridge;
-	d2rq:belongsToClassMap map:vehiculo;
-	d2rq:property vocab:vehiculo_nit_proveedor;
-	d2rq:refersToClassMap map:proveedor;
-	d2rq:join "vehiculo.nit_proveedor => proveedor.nit";
-	.
-map:vehiculo_cedula_vendedor__ref a d2rq:PropertyBridge;
-	d2rq:belongsToClassMap map:vehiculo;
-	d2rq:property vocab:vehiculo_cedula_vendedor;
-	d2rq:refersToClassMap map:vendedor;
-	d2rq:join "vehiculo.cedula_vendedor => vendedor.cedula";
-	.
-map:vehiculo_cedula_comprador__ref a d2rq:PropertyBridge;
-	d2rq:belongsToClassMap map:vehiculo;
-	d2rq:property vocab:vehiculo_cedula_comprador;
-	d2rq:refersToClassMap map:comprador;
-	d2rq:join "vehiculo.cedula_comprador => comprador.cedula";
+	d2rq:property vocab:proveedor_Nombre;
+	d2rq:propertyDefinitionLabel "proveedor Nombre";
+	d2rq:column "proveedor.Nombre";
 	.
 
 # Table vendedor
 map:vendedor a d2rq:ClassMap;
 	d2rq:dataStorage map:database;
-	d2rq:uriPattern "vendedor/@@vendedor.cedula@@";
+	d2rq:uriPattern "vendedor/@@vendedor.Cedula@@";
 	d2rq:class vocab:vendedor;
 	d2rq:classDefinitionLabel "vendedor";
 	.
 map:vendedor__label a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:vendedor;
 	d2rq:property rdfs:label;
-	d2rq:pattern "vendedor #@@vendedor.cedula@@";
+	d2rq:pattern "vendedor #@@vendedor.Cedula@@";
 	.
-map:vendedor_cedula a d2rq:PropertyBridge;
+map:vendedor_Horas_trabajo a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:vendedor;
-	d2rq:property vocab:vendedor_cedula;
-	d2rq:propertyDefinitionLabel "vendedor cedula";
-	d2rq:column "vendedor.cedula";
+	d2rq:property vocab:vendedor_Horas_trabajo;
+	d2rq:propertyDefinitionLabel "vendedor Horas_trabajo";
+	d2rq:column "vendedor.Horas_trabajo";
 	d2rq:datatype xsd:integer;
 	.
-map:vendedor_nombre a d2rq:PropertyBridge;
+<#vendedor_Meses%20vinculacion> a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:vendedor;
-	d2rq:property vocab:vendedor_nombre;
-	d2rq:propertyDefinitionLabel "vendedor nombre";
-	d2rq:column "vendedor.nombre";
+	d2rq:property <vocab/vendedor_Meses%20vinculacion>;
+	d2rq:propertyDefinitionLabel "vendedor Meses vinculacion";
+	d2rq:column "vendedor.Meses vinculacion";
+	d2rq:datatype xsd:integer;
+	.
+map:vendedor_Cedula__ref a d2rq:PropertyBridge;
+	d2rq:belongsToClassMap map:vendedor;
+	d2rq:property vocab:vendedor_Cedula;
+	d2rq:refersToClassMap map:persona;
+	d2rq:join "vendedor.Cedula => persona.Cedula";
 	.
 
